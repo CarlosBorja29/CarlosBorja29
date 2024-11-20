@@ -1,15 +1,15 @@
 <div class="login-container">
   <div class="login-form-wrapper">
     <img src="assets/ecoTurismLogo.jpg" alt="Login Banner" class="login-image" />
-    
+
     <form (ngSubmit)="onLogin()" [formGroup]="loginForm" class="login-form">
       <div class="form-group">
-        <label for="email">Correo Electrónico</label>
+        <label for="username">Usuario</label>
         <input 
-          id="email" 
-          type="email" 
-          formControlName="email" 
-          placeholder="Ingresa tu correo" 
+          id="username" 
+          type="text" 
+          formControlName="username" 
+          placeholder="Ingresa tu usuario" 
           required 
           class="form-control" />
       </div>
